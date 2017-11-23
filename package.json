@@ -1,0 +1,30 @@
+{
+  "name": "@heise/request-promise-native-record",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js lib test && mocha --bail --check-leaks",
+    "dev": "mocha --bail --check-leaks -w"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "mockery": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "fs-extra": "^4.0.2",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "peerDependencies": {
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
