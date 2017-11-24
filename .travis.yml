@@ -13,3 +13,4 @@ deploy:
   on:
     tags: true
     repo: heiseonline/request-promise-native-record
+    node_js: '8'
