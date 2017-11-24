@@ -1,11 +1,23 @@
 {
   "name": "@heise/request-promise-native-record",
   "version": "1.0.0",
+  "description": "Records and plays back responses from remote web services so you can test your code in peace.",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js lib test && mocha --bail --check-leaks",
     "dev": "mocha --bail --check-leaks -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heiseonline/request-promise-native-record/"
+  },
+  "author": {
+    "name": "Philipp Busse",
+    "email": "pmb@heise.de"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   },
   "dependencies": {
     "debug": "^3.1.0",
