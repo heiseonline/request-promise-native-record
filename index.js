@@ -34,7 +34,7 @@ const start = ({folder = os.tmpdir()} = {}) => {
 
       try {
         if (process.env.HTTP_MODE === 'record') throw new Error()
-        debug(`require ${file} ...`)
+        debug(`requiring ${file} ...`)
         content = require(file)
         debug(`successfully required ${file}.`)
       } catch (e) {
