@@ -23,11 +23,7 @@ const start = ({folder = os.tmpdir()} = {}) => {
 
   mockery.registerMock('request-promise-native', {
     get: async (url, options) => {
-      if (!options) {
-        options = url
-      } else {
-        options.uri = url
-      }
+      options = util._optionsParser(url, options)
 
       const file = util.cacheFile(options, folder)
       let content
