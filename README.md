@@ -34,12 +34,13 @@ module.exports = Api
 
 ```js
 const assert = require('assert')
-const record = require('./')
-require('../my-api')
+const record = require('@heise/request-promise-native-record')
+
+record.start({folder: '/tmp'})
+const Api = require('../lib/my-api')
 
 describe('my description', () => {
   it('should test my api', async () => {
-    record.start({folder: '/tmp'})
     let response = await Api.getFoo() // 1. call: network request
     let response = await Api.getFoo() // 2. call: read from fs
     assert.ok(response.includes('Example Domain'))
