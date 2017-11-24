@@ -1,8 +1,8 @@
 # request-promise-native-record
 
-When you write unit tests for APIs that consume remote web services, you want to test your application and not the network or remote web service. `request-promise-native-record` helps to record the answers of these web services in files and to play them back later.
+When writing unit tests for APIs that consume remote web services, your goal is to test your code, not the network or remote web service. `request-promise-native-record` records the answers of these web services and plays them back later.
 
-If a recording does not exist or the environment variable `HTTP_MODE` is set to `record`, HTTP responses are written to files when you run your tests. You may want to check these files into your VCS. If the files are available, they will be used automatically for further test runs. From now on there is no network traffic.
+If a recording does not exist or the environment variable `HTTP_MODE` is set to `record`, HTTP responses are written to files when running your tests. You may want to check these files into your VCS. If recordings are available, they will be used automatically for further test runs. No network traffic will occur from now on.
 
 ## Installation
 
