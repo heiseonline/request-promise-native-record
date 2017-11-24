@@ -39,15 +39,18 @@ const start = ({folder = os.tmpdir()} = {}) => {
         debug(`successfully required ${file}.`)
       } catch (e) {
         if (_networkDisabled) throw new Error('network disabled')
-        debug('requesting', url)
 
+        debug('requesting', url)
         content = await request(options)
-        debug(`writing ${file} ... `)
+
         try {
           delete content.request.headers.Authorization
         } catch (e) {}
+
+        debug(`writing ${file} ... `)
         await fs.writeFile(file, JSON.stringify(content, null, '  '))
       }
+
       return content
     }
   })
