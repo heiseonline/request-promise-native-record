@@ -48,7 +48,7 @@ const start = ({folder = os.tmpdir()} = {}) => {
         } catch (e) {}
         await fs.writeFile(file, JSON.stringify(content, null, '  '))
       }
-      return Promise.resolve(content)
+      return content
     }
   })
 }
