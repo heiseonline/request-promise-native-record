@@ -59,7 +59,7 @@ $ cat /tmp/14ba12b98882bca3bc00abff8735175a2544a9c1aa64794e85503198d84595b5.json
 
 ## Storing/Retrieving response headers, status codes and response body
 
-To save the full response instead of just the response body, use the option [`resolveWithFullResponse`](https://github.com/request/request-promise#get-the-full-response-instead-of-just-the-body). The `Authorization` is removed from the headers object before writing to the hard disk.
+To save the full response instead of just the response body, use the option [`resolveWithFullResponse`](https://github.com/request/request-promise#get-the-full-response-instead-of-just-the-body). The `Authorization` header is removed from the headers object before writing to the hard disk.
 
 `lib/my-api.js`:
 
