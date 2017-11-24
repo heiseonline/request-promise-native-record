@@ -1,6 +1,9 @@
 # request-promise-native-record
 
-[![Build Status](https://travis-ci.org/heiseonline/request-promise-native-record.svg?branch=master)](https://travis-ci.org/heiseonline/request-promise-native-record) [![Greenkeeper badge](https://badges.greenkeeper.io/heiseonline/request-promise-native-record.svg)](https://greenkeeper.io/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/heiseonline/request-promise-native-record.svg?branch=master)](https://travis-ci.org/heiseonline/request-promise-native-record)
+[![Greenkeeper badge](https://badges.greenkeeper.io/heiseonline/request-promise-native-record.svg)](https://greenkeeper.io/)
+[![Dependency Status](https://img.shields.io/david/heiseonline/request-promise-native-record.svg?style=flat-square)](https://david-dm.org/heiseonline/request-promise-native-record)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 When writing unit tests for APIs that consume remote web services, your goal is to test your code, not the network or remote web service. `request-promise-native-record` records the answers of these web services and plays them back later.
 
