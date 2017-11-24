@@ -17,6 +17,7 @@
     "email": "pmb@heise.de"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "http://registry.npmjs.org"
   },
   "dependencies": {
