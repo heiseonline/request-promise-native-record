@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Improved request hasher so that the port number of a request has no effect on the file name.
+
 ## v1.0.4, 2017-11-30
 
 - Fixed build by no longer running it with Node.js@^7.
