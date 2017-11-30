@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v1.0.3, 2017-11-30
 
 - Fixed broken tests.
 
