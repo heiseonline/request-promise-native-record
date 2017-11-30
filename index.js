@@ -30,8 +30,12 @@ const start = ({folder = os.tmpdir()} = {}) => {
 
       try {
         if (process.env.HTTP_MODE === 'record') throw new Error()
-        debug(`requiring ${file} ...`)
-        content = require(file)
+        debug(`reading ${file} ...`)
+        content = await fs.readFile(file)
+        content = JSON.parse(content, (key, value) => {
+          if (value && value.type === 'Buffer') return Buffer.from(value.data)
+          return value
+        })
         debug(`successfully required ${file}.`)
       } catch (e) {
         if (_networkDisabled) throw new Error('network disabled')
