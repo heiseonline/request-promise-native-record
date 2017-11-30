@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Fixed build by no longer running it with Node.js@^7.
+
 ## v1.0.3, 2017-11-30
 
 - Fixed broken tests.
