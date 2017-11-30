@@ -8,6 +8,9 @@ let server
 
 before(done => {
   const s = http.createServer((req, res) => {
+    if (req.url.includes('buffer')) {
+      return res.end(Buffer.from('some data'))
+    }
     res.writeHead(200, { 'Content-Type': 'text/plain' })
     res.end(req.url)
   }).listen(0, '127.0.0.1', () => {
@@ -21,9 +24,9 @@ before(done => {
 beforeEach(start)
 afterEach(restore)
 
-const _req = uri => {
+const _req = (uri, options = {}) => {
   uri = server + uri
-  return {uri, simple: false, resolveWithFullResponse: true}
+  return {...options, uri, simple: false, resolveWithFullResponse: true}
 }
 
 describe('request-promise-native-record', () => {
@@ -71,5 +74,18 @@ describe('request-promise-native-record', () => {
     } catch (err) {
       assert.equal(err.message, 'network disabled')
     }
+  })
+
+  it.only('should support Buffers', async () => {
+    const req = _req('/buffer', {encoding: null})
+    const request = require('request-promise-native')
+
+    // Writing to disk
+    let res1 = await request.get(req)
+    assert.ok(Buffer.isBuffer(res1.body))
+
+    // Reading from disk
+    let res2 = await request.get(req)
+    assert.ok(Buffer.isBuffer(res2.body))
   })
 })
