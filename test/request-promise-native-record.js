@@ -1,4 +1,4 @@
-const {disableNetwork, start, restore} = require('../')
+const {disableNetwork, enableNetwork, start, restore} = require('../')
 const {cacheFile} = require('../lib/util')
 const assert = require('assert')
 const fs = require('fs-extra')
@@ -74,9 +74,10 @@ describe('request-promise-native-record', () => {
     } catch (err) {
       assert.equal(err.message, 'network disabled')
     }
+    enableNetwork()
   })
 
-  it.only('should support Buffers', async () => {
+  it('should support Buffers', async () => {
     const req = _req('/buffer', {encoding: null})
     const request = require('request-promise-native')
 

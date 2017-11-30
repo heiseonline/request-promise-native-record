@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Fixed broken tests.
+
 ## v1.0.2, 2017-11-30
 
 - Added support for binary data.
