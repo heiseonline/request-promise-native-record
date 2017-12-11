@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v1.0.6, 2017-12-11
 
 - Mockery's `useCleanCache` option is no longer used.
 - Upgraded dependencies.
