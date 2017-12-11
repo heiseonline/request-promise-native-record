@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Upgraded dependencies.
+
 ## v1.0.5, 2017-11-30
 
 - Improved request hasher so that the port number of a request has no effect on the file name.
