@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Mockery's `useCleanCache` option is no longer used.
 - Upgraded dependencies.
 
 ## v1.0.5, 2017-11-30
