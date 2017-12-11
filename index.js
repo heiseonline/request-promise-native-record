@@ -17,8 +17,7 @@ const restore = () => {
 
 const start = ({folder = os.tmpdir()} = {}) => {
   mockery.enable({
-    warnOnUnregistered: false,
-    useCleanCache: true
+    warnOnUnregistered: false
   })
 
   mockery.registerMock('request-promise-native', {
