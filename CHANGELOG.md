@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.9, 2017-12-14
+
+- Re-released v1.0.8 with correct version information.
+
 ## v1.0.8, 2017-12-14
 
 - Fixed yarn paths.
