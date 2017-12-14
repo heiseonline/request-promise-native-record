@@ -1,6 +1,6 @@
 {
   "name": "@heise/request-promise-native-record",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "Records and plays back responses from remote web services so you can test your code in peace.",
   "license": "MIT",
   "main": "index.js",
