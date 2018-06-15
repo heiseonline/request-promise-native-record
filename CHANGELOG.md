@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Upgraded dependencies.
+
 ## v1.0.10, 2018-02-07
 
 - Upgraded dependencies.
