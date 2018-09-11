@@ -21,7 +21,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "dependencies": {
-    "debug": "^3.1.0",
+    "debug": "^4.0.0",
     "fs-extra": "^7.0.0",
     "mockery": "^2.1.0",
     "request": "^2.83.0",
