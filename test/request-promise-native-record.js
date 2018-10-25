@@ -39,8 +39,8 @@ describe('request-promise-native-record', () => {
     const request = require('request-promise-native')
     let response = await request.get(req)
 
-    assert.strict.equal(response.statusCode, 200)
-    assert.strict.equal(response.body, '/abc')
+    assert.strictEqual(response.statusCode, 200)
+    assert.strictEqual(response.body, '/abc')
     assert.ok(await fs.pathExists(file))
     await fs.remove(file)
     delete process.env.HTTP_MODE
@@ -53,15 +53,15 @@ describe('request-promise-native-record', () => {
 
     const request = require('request-promise-native')
     let response = await request.get(req)
-    assert.strict.equal(response.statusCode, 666)
+    assert.strictEqual(response.statusCode, 666)
   })
 
   it('should work with external API code', async () => {
     const api = require('./fixtures/api')
 
     const response = await api.getFoo(server)
-    assert.strict.equal(response.statusCode, 200)
-    assert.strict.equal(response.body, '/?foo')
+    assert.strictEqual(response.statusCode, 200)
+    assert.strictEqual(response.body, '/?foo')
   })
 
   it('should trigger an exception if the network is disabled and a request is to be sent', async () => {
@@ -72,7 +72,7 @@ describe('request-promise-native-record', () => {
       await request.get(req)
       throw new Error('network is not disabled')
     } catch (err) {
-      assert.strict.equal(err.message, 'network disabled')
+      assert.strictEqual(err.message, 'network disabled')
     }
     enableNetwork()
   })
