@@ -15,7 +15,7 @@ const restore = () => {
   mockery.deregisterAll()
 }
 
-const start = ({folder = os.tmpdir()} = {}) => {
+const start = ({ folder = os.tmpdir() } = {}) => {
   mockery.enable({
     warnOnUnregistered: false
   })
