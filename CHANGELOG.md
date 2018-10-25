@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.12, 2018-10-25
+
+- Upgraded dependencies.
+- Improved tests to support Node versions 8, 10 and 11.
+
 ## v1.0.11, 2018-08-31
 
 - Upgraded dependencies.
