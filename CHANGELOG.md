@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.13, 2019-06-11
+
+- Upgraded dependencies.
+
 ## v1.0.12, 2018-10-25
 
 - Upgraded dependencies.
